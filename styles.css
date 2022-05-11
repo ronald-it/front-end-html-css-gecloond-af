@@ -1,0 +1,492 @@
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&display=swap');
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Alles wat men buiten de media query specificeert, geldt dan voor mobiele apparaten */
+p {
+    font-size: 12px;
+}
+
+/* Minimaal 768px betekend regels die gelden voor tablets */
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Minimaal 992px betekend regels die gelden voor kleine computerschermen */
+@media screen and (min-width: 992px) {
+    p {
+        font-size: 16px;
+    }
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+.outer-container-header {
+    display: flex;
+    justify-content: center;
+    /*border: solid red;*/
+    color: white;
+    padding: 30px 0;
+}
+
+.outer-container-main {
+    display: flex;
+    justify-content: center;
+    /*border: solid red;*/
+    color: white;
+    padding: 0px 0;
+}
+
+.outer-container-footer {
+    display: flex;
+    justify-content: center;
+    /*border: solid red;*/
+    color: white;
+    padding: 0 0;
+}
+
+.inner-container-header,
+.inner-container-main {
+    /*border: solid red;*/
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-basis: 1400px;
+}
+
+.inner-container-footer {
+    /*border: solid red;*/
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-basis: 1400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------- */
+
+.outer-container-header {
+    background-color: #4845E4;
+    color: white;
+    padding-bottom: 0;
+}
+
+
+.list-items-navigation {
+    font-weight: bold;
+    /*border: solid red;*/
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.title-text-and-button-header {
+    text-align: center;
+    margin: 60px;
+}
+
+.title-header,
+.text-header,
+.button-header {
+    margin: 10px;
+}
+
+.text-header {
+    font-weight: lighter;
+}
+
+.title-header,
+.text-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-header {
+    background-color: #ED4385;
+    color: white;
+    padding: 20px;
+    letter-spacing: 1px;
+    border-style: solid;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+}
+
+.squiggle-line-stripe {
+    align-self: center;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.case-studies-list-link,
+.services-list-link,
+.contact-us-list-link {
+    color: white;
+}
+
+nav a {
+    color: white;
+}
+
+.list-items-navigation {
+    text-decoration: none;
+}
+
+/* --------------- 4.2 Introduction ------------- */
+
+.rekupe {
+    background-color: white;
+    margin-top: 120px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #5722CD;
+    /*border: solid red;*/
+}
+
+.paragraph-rekupe {
+    color: black;
+    font-weight: bold;
+}
+
+.link-form-field-rekupe {
+    color: #5722CD;
+    text-decoration: none;
+}
+
+/* --------------- 4.3 Rolling Stone ------------- */
+
+.rolling-stone-outer-container {
+    background-color: #F3F6F9;
+    color: black;
+    /*border: solid red;*/
+}
+
+.rolling-stone-inner-container {
+    margin-top: 150px;
+    margin-bottom: 75px;
+}
+
+.rolling-stone-image,
+.rolling-stone-title,
+.rolling-stone-black-text,
+.rolling-stone-purple-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+}
+
+.rolling-stone-squiggle-line {
+    align-self: flex-start;
+    margin-left: 45px;
+    width: 8%;
+}
+
+.rolling-stone-image {
+    margin-bottom: 10px;
+}
+
+.rolling-stone-title {
+    font-size: xx-large;
+}
+
+.rolling-stone-black-text {
+    font-weight: bold
+}
+
+.rolling-stone-purple-text {
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: x-small;
+    color: #5722CD
+}
+
+/* --------------- 4.4 Variety ------------- */
+
+.variety-outer-container {
+    background-color: #F3F6F9;
+    color: black;
+    /*border: solid red;*/
+}
+
+.variety-inner-container {
+    margin-top: 0px;
+    margin-bottom: 75px;
+}
+
+.variety-image,
+.variety-title,
+.variety-black-text,
+.variety-purple-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+}
+
+.variety-squiggle-line {
+    align-self: flex-start;
+    margin-left: 45px;
+    width: 8%;
+}
+
+.variety-image {
+    margin-bottom: 10px;
+}
+
+.variety-title {
+    font-size: xx-large;
+}
+
+.variety-black-text {
+    font-weight: bold
+}
+
+.variety-purple-text {
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: x-small;
+    color: #5722CD
+}
+
+/* --------------- 4.5 Worth ------------- */
+
+.worth-outer-container {
+    background-color: #F3F6F9;
+    color: black;
+    /*border: solid red;*/
+}
+
+.worth-inner-container {
+    margin-top: 0px;
+    margin-bottom: 200px;
+}
+
+.worth-image,
+.worth-title,
+.worth-black-text,
+.worth-purple-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+}
+
+.worth-image {
+    margin-bottom: 30px;
+}
+
+.worth-title {
+    font-size: xx-large;
+}
+
+.worth-black-text {
+    font-weight: bold
+}
+
+.worth-purple-text {
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: x-small;
+    color: #5722CD
+}
+
+a,
+a:visited,
+a:link {
+    text-decoration: none;
+}
+
+.worthy-squiggle-line {
+    align-self: flex-start;
+    margin-left: 45px;
+    width: 8%;
+}
+
+/* --------------- 4.6 Services ------------- */
+
+/*We kregen het niet voor elkaar
+om samen die tiles goed aligned
+te krijgen. Ze blijven in de mobiele
+versie met z'n 2en naast elkaar
+
+Hier zou je nog even naar kijken*/
+
+.outer-container-services {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    /*border: solid red;*/
+}
+
+.inner-container-services {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    background-color: white;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+}
+
+#services > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.web-design-image,
+.web-development-image,
+.user-experience-image,
+.logo-design-plus-branding-image,
+.seo-image,
+.copy-writing-image {
+    max-height: 75px;
+    max-width: 75px
+}
+
+.web-design,
+.web-development,
+.user-experience,
+.logo-design-plus-branding,
+.seo,
+.copy-writing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 400px;
+    padding: 60px;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 1;
+    border: 1px solid #5722CD;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.web-design-text,
+.web-development-text,
+.user-experience-text,
+.logo-design-plus-branding-text,
+.seo-text,
+.copy-writing-text {
+    color: #7A7A7A
+}
+
+/* --------------- 4.7 Form ------------- */
+
+/*We kregen het niet voor elkaar
+om de message field in deze form
+groter te krijgen. Hier zou je nog
+even naar kijken*/
+
+.outer-container-form {
+    background-color: #4845E4;
+    color: white;
+}
+
+.inner-container-form {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*border: solid red;*/
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-title,
+.form-text-paragraph {
+    display: flex;
+    justify-content: space-around;
+}
+
+#name-field,
+#email-field,
+#message-field {
+    padding: 20px;
+}
+
+.send-form {
+    align-self: center;
+    width: 200px;
+    background-color: #ED4385;
+    color: white;
+    padding: 20px;
+    letter-spacing: 1px;
+    border-style: solid;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+
+}
+
+/* --------------- 4.8 Footer ------------- */
+
+.outer-container-footer {
+    background-color: black;
+}
+
+.inner-container-footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------- 4.9 Desktop ------------- */
+
+/*Ik wist niet precies hoe ik de
+afbeeldingen bij de voorbeeldwebsites
+links en rechts van de stukken tekst
+kon krijgen.*/
+
+/* Minimaal 992px betekend regels die gelden voor kleine computerschermen */
+@media screen and (min-width: 992px) {
+
+    .list-items-navigation {
+        font-weight: normal;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1em;
+    }
+
+    .header-text-rekupe {
+        margin-bottom: 75px
+    }
+}
+
